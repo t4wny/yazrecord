@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Yazrecord</title>
+  <title>Yaz Record: a To Do List</title>
+  <link rel="stylesheet" ref="/bootstrap.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="navbar navbar-fixed-top">
+		<div class "navbar-inner">
+			<div class="container">
+				<a class="brand" href="/">Yaz Record</a>
+				<ul class="nav">
+					<li class="active">
+						<a href="/todos">To Dos</a>
+			</div>
+		</div>
+	</div>
 
+<div class="container">
 <%= yield %>
+</div>
 
+<footer>
+	<div class="container">
+		Yaz Record by t4wny
+	</div>
+</footer>
 </body>
 </html>
