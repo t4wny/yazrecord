@@ -3,6 +3,7 @@
 <head>
   <title>Yaz Record: a To Do List</title>
   <link rel="stylesheet" href="/bootstrap.css">
+  <link reL="stylesheet" href="/stylesheet.css"
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -18,11 +19,17 @@
 			</div>
 		</div>
 	</div>
-
-<div class="container">
+<div>
+	<form class="form-group">
+		<input type="text" class="form-control" placeholder="New ToDo"><br>
+		<input type="submit" class="btn">
+		</input>
+	</form>
+</div>
+<div class="container" id="list">
 <%= yield %>
 </div>
-
+</div>
 <footer>
 	<div class="container">
 		Yaz Record by t4wny

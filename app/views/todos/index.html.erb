@@ -1,9 +1,9 @@
-<h1>Listing todos</h1>
+<h2>Do Something Real</h2>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>To Do</th>
       <th></th>
       <th></th>
       <th></th>
@@ -13,10 +13,10 @@
   <tbody>
     <% @todos.each do |todo| %>
       <tr>
+        <td> <input="checkbox"></td>
         <td><%= todo.name %></td>
-        <td><%= link_to 'Show', todo %></td>
         <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
-        <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'For real dogg?' } %></td>
       </tr>
     <% end %>
   </tbody>
